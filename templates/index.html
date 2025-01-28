@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditrain AI</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="icon" type="image/jpeg" href="/static/images/Logo.jpeg">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/static/images/Logo.jpeg" alt="Meditrain AI Logo">
+            <span>Meditrain AI</span>
+        </div>
+    </header>
+
+    <div id="intro-section" class="content-section">
+        <h1>Welcome to Meditrain AI</h1>
+        <p class="subtitle">Your trusted healthcare assistant</p>
+        <div class="search-box">
+            <textarea id="user-query" placeholder="Enter your medical query..." aria-label="Medical Query Input"></textarea>
+            <button id="search-button" class="send-btn" aria-label="Search ">Search</button>
+        </div>
+    </div>
+
+    <div id="quick-queries">
+        <p>Quick Queries</p>
+        <div class="button-group">
+            <button class="action-btn" onclick="predefinedQuery('Find a doctor nearby')">Find a doctor</button>
+            <button class="action-btn" onclick="predefinedQuery('What are the symptoms of flu?')">Symptoms of Flu</button>
+            <button class="action-btn" onclick="predefinedQuery('List of top clinics near me')">Top Clinics</button>
+        </div>
+    </div>
+
+    <div id="chat-container" class="chat-container" style="display: none;">
+        <div id="chat-box" class="chat-box">
+            <!-- Chat messages will be added here -->
+        </div>
+        <div class="chat-controls">
+            <textarea id="user-message" placeholder="Type your query..." aria-label="Chat Message Input"></textarea>
+            <button id="send-message" class="send-btn" aria-label="Send Message">Search</button>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Meditrain AI.</p>
+    </footer>
+    <script src="/static/script.js" defer></script>
+</body>
+</html>
